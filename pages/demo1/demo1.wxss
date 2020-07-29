@@ -1,0 +1,212 @@
+/* pages/demo1/demo1.wxss */
+page{
+	background-color: #fbe738;
+}
+
+/* 头部 */
+.header{
+	width: 750rpx;
+	height: 50px;
+	display: flex;
+	flex-direction: row;
+	align-content: center;
+	/* background-color: #ccc; */
+}
+
+.header-img{
+	width: 50px;
+	height: 50px;
+	/* background-color: #eee; */
+}
+
+.header-img-1{
+	width: 50px;
+	height: 50px;
+}
+/* 文本 */
+.header-text{
+	width: 250px;
+	height: 50px;
+	text-align: center;
+	line-height: 50px;
+	/* background-color: #fff; */
+}
+
+/* 获胜 */
+.center{
+	width: 750rpx;
+	height:100%;
+	display: flex;
+	flex-direction: column;
+	/* background-color:#fe7612; */
+}
+
+/* 获胜 */
+.center-one{
+	width: 750rpx;
+	height:200px;
+	display: flex;
+	flex-direction: column;
+	/* background-color:#fe7612; */
+}
+
+.center-text{
+	width:300px;
+	height:50px;
+	/* background-color: #ccc; */
+	text-align: center;
+	line-height: 50px;
+	margin-left: 41px;
+}
+/* 获胜结束 */
+
+/* 动图 */
+.center-img{
+	width: 750rpx;
+	height:100px;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	/* background-color:#fff; */
+}
+/* 动图 */
+.center-img-1{
+	width: 100px;
+	height: 100px;
+	border:1px solid #fff;
+	/* background-color: #ffbc00; */
+}
+/* 动图 */
+.img-one{
+	width: 100px;
+	height: 100px;
+}
+/* 平局 */
+.center-text-1{
+	width: 80px;
+	height: 100px;
+	text-align: center;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	/* background-color: #f5eb91; */
+}
+/* 平局 */
+.center-text-1 text{
+	text-align: center;
+	line-height: 23px;
+	color: #fe7612;
+}
+
+/* 布 */
+.center-img-2{
+	width: 100px;
+	height: 100px;
+	border:1px solid #fff;
+	/* background-color: #ffbc00; */
+}
+/* 布 */
+.center-img-2 img{
+	width: 100px;
+	height: 100px;
+}
+/* 布 */
+.img-two{
+	width: 100px;
+	height: 100px;
+}
+
+/* 出手吧 */
+.center-two{
+	width: 750rpx;
+	height: 329px;
+	display: flex;
+	flex-direction:column;
+	align-content: center;
+	/* background-color:#f5be91; */
+}
+
+.center-three{
+	width: 300px;
+	height: 300px;
+	display: flex;
+	flex-direction:column;
+	align-content: center;
+	background-color: #f5eb91;
+	margin: 0 auto;
+}
+
+.op-data{
+	font-size: 18px;
+	/* font-weight: bold; */
+}
+
+.center-three-text{
+	width: 300px;
+	height: 50px;
+	text-align: center;
+	line-height: 50px;
+	/* background-color: #fff; */
+}
+
+.center-three-img{
+	width: 300px;
+	height: 113px;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	align-items: center;
+	/* background-color:#ffbc00; */
+}
+
+.four{
+	width:90px;
+	height: 90px;
+	/* background-color: #ccc; */
+	border: 1px solid #fff;
+	border-radius: 50%;
+}
+
+.four image{
+	width:80px;
+	height: 80px;
+	margin-top: 5px;
+	margin-left: 5px;
+}
+
+.four-one{
+	width:90px;
+	height: 90px;
+	border: 1px solid #fff;
+	/* background-color: #ccc; */
+	border-radius: 50%;
+}
+
+.four-one image{
+	width:80px;
+	height: 80px;
+	margin-top: 5px;
+	margin-left: 5px;
+}
+
+.four-two{
+	width:90px;
+	height: 90px;
+	border: 1px solid #fff;
+	/* background-color: #ccc; */
+	border-radius: 50%;
+}
+
+.four-two image{
+	width:80px;
+	height: 80px;
+	margin-top: 5px;
+	margin-left: 5px;
+}
+
+/* 再来一次 */
+.btn-one{
+	background-color: #fbe738;
+	color: #00001f;
+	margin-top: 20px;
+}

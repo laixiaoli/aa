@@ -1,0 +1,15 @@
+{
+  "pages":[
+    "pages/demo/demo",
+    "pages/demo1/demo1"
+  
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#f5eb91",
+    "navigationBarTitleText": "石头剪刀布",
+    "navigationBarTextStyle":"black"
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json"
+}

@@ -1,0 +1,16 @@
+<!--pages/demo/demo.wxml-->
+<view class="header">
+	<view class="header-img">
+		<!-- <image class="header-tou-img" src="../../image/tox.jpg"></image> -->
+		<!-- 获取用户头像 -->
+		<open-data type="userAvatarUrl"></open-data>
+	</view>
+</view>
+<view class="center">
+	<!-- <text>一起来战,</text> -->
+	<!-- 获取用户名 -->
+	<open-data type="userNickName"></open-data>
+</view>
+<button class="btn"  open-type="getUserInfo"  bindgetuserinfo="getUserinfoEvent">进入游戏</button>
+
+<!-- <button open-type="getUserInfo" bindgetuserinfo="getUserInfo">获取用户信息</button> -->

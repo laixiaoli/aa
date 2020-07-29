@@ -1,0 +1,54 @@
+<!--pages/demo1/demo1.wxml-->
+<!-- 头部 -->
+<view class="btn-area">
+  <navigator url="/pages/demo/demo" hover-class="navigator-hover">
+			<!-- <image class="header-img-1" src="../../image/f.png"></image> -->
+	</navigator>
+</view>
+<!-- 中间 -->
+<view class="center">
+	<!-- 获胜 -->
+	<view class="center-one">
+		<view class="center-text">
+			<text>你已经获胜了<text class="nam">{{winNam}}</text>次</text>
+		</view>
+		<view class="center-img">
+			<view class="center-img-1">
+				<image class="img-one" src="{{userImg}}"></image>
+			</view>
+			<view class="center-text-1">
+				<text>{{textname}}</text>
+			</view>
+			<view class="center-img-2">
+				<!-- <image class="img-two" src="../../image/bu.png"></image> -->
+				<image src="{{imageUrl[autoIdx]}}" class="img-two"></image>
+			</view>
+		</view>
+	</view>
+	<!-- 出手吧 -->
+	<view class="center-two">
+		<view class="center-three">
+			<view class="center-three-text">
+				<text>出手吧</text>
+				<!-- <text>一起来战</text> -->
+				<!-- 获取用户名 -->
+				<open-data type="userNickName" class="op-data"></open-data>
+			</view>
+			<view class="center-three-img" bindtap="chooseImg">
+				<view class="four">
+				<!-- data-自定义属性名 -->
+					<image src="../../image/bu.png" data-imgid="0"></image>
+				</view>
+				<view class="four-one">
+					<image src="../../image/jiandao.png" data-imgid="1"></image>
+				</view>
+				<view class="four-two">
+					<image src="../../image/shito.png" data-imgid="2"></image>
+				</view>
+			</view>
+			<button type="button" class="btn-one" bindtap="again">再来一次</button>
+			<!-- <button type="button" class="btn-one" bindtap="tiaoz">返回</button>
+			<button type="button" class="btn-one" bindtap="rediRectTo">redirectTo</button> -->
+		</view>
+	</view>
+</view>

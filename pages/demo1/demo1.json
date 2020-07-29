@@ -1,0 +1,7 @@
+{
+  "usingComponents": {},
+  "backgroundTextStyle":"light",
+  "navigationBarBackgroundColor": "#f5eb91",
+  "navigationBarTitleText": "石头剪刀布",
+  "navigationBarTextStyle":"black"
+}
