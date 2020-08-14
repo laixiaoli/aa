@@ -1,0 +1,104 @@
+/* pages/wode/wode.wxss */
+/* 登录 */
+.logo{
+    width: 750rpx;
+    height: 350rpx;
+    background-color: forestgreen;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.btn{
+    border-radius: 30px;
+}
+
+/* 我的 */
+.book{
+    width: 750rpx;
+    height: 100%;
+    /* background-color: gray; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.book-wode{
+    width: 730rpx;
+    height: 100rpx;
+    /* background-color: khaki; */
+    line-height: 100rpx;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.book-look{
+    color: rgb(122, 121, 121);
+}
+
+/* 观影分析 */
+.book-guanying{
+    width: 750rpx;
+    height: 150rpx;
+    /* background-color: khaki; */
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 10px;
+}
+
+/* 观影图片 */
+.book-guanying image{
+    width: 52rpx;
+    height: 52rpx;
+
+}
+
+.book-fengxi{
+    width: 650rpx;
+    height: 150rpx;
+    background-color: #fff;
+    border-bottom: 1px solid rgb(233, 233, 233);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.fenxi-item{
+    display: flex;
+    flex-direction: column;
+}
+
+.look{
+    color: #555;
+}
+
+.fenxi-item-1{
+    display: flex;
+    flex-direction: column;
+    color: rgb(182, 180, 180);
+}
+
+.book-btn{
+    width: 200rpx;
+    height: 60rpx;
+    display: flex;
+    flex-direction: row;
+    background-color: rgb(194, 193, 193);
+    border-radius: 5px;
+    line-height: 80rpx;
+}
+
+.book-btn button{
+    background-color: rgb(216, 215, 215);
+    width: 146rpx;
+    height: 60rpx;
+    border-radius: 5px;
+    font-size: 13px;
+    font-weight: 500;
+}

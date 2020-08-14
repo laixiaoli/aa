@@ -1,0 +1,42 @@
+/* 图片 */
+.hotmovie-img{
+    height: 400rpx;
+    /* width: 700rpx; */
+    /* background-color: darksalmon; */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding:20px 20px;
+    flex-wrap: wrap;
+  }
+  
+  .picture{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    text-align: center;
+    align-items: center;
+  }
+  
+  .picture image{
+    width: 200rpx;
+    height: 280rpx;
+    border-radius: 5px;
+  }
+  
+  .picture text{
+    font-size: 12px;
+  }
+
+/* 星星图片 */
+.box-stars{
+	display: flex;
+    flex-direction: row;
+    /* align-items: center; */
+    line-height: 100%;
+}
+
+.box-stars image{
+	height: 25rpx;
+    width: 25rpx;
+}

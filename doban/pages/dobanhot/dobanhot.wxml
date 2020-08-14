@@ -1,0 +1,34 @@
+<!--pages/dobanhot/dobanhot.wxml-->
+<view class="box-max">
+	<view class="hot-img">
+		<view class="hot-picture" wx:for="{{arr}}">
+			<image src="{{item.movieImg}}"></image>
+			<text>{{item.movieName}}</text>
+			<text>评分:{{item.movieSroce}}</text>
+		</view>
+	</view>
+
+	<view class="hot-img">
+		<view class="hot-picture" wx:for="{{arr1}}">
+			<image src="{{item.movieImg}}"></image>
+			<text>{{item.movieName}}</text>
+			<text>评分:{{item.movieSroce}}</text>
+		</view>
+	</view>
+
+	<view class="hot-img">
+		<view class="hot-picture" wx:for="{{arr2}}">
+			<image src="{{item.movieImg}}"></image>
+			<text>{{item.movieName}}</text>
+			<text>评分:{{item.movieSroce}}</text>
+		</view>
+	</view>
+
+	<view class="hot-img">
+		<view class="hot-picture" wx:for="{{arr3}}">
+			<image src="{{item.movieImg}}"></image>
+			<text>{{item.movieName}}</text>
+			<text>评分:{{item.movieSroce}}</text>
+		</view>
+	</view>
+</view>

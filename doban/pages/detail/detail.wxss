@@ -1,0 +1,280 @@
+/* pages/detail/detail.wxss */
+.box-max{
+  width: 750rpx;
+  height: 100%;
+  /* background-color: brown; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.home{
+  width: 750rpx;
+  height: 300rpx;
+  /* background-color: cornflowerblue; */
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+
+/* 电影图片 */
+.home-img image{
+  width: 180rpx;
+  height: 250rpx;
+}
+
+/* 何以为家 */
+.home-item{
+  display: flex;
+  flex-direction: column;
+}
+
+.title{
+  font-weight: 700;
+}
+
+.title-1{
+  font-size: 10px;
+  color: rgb(212, 208, 208);
+}
+
+.home-btn{
+  display: flex;
+  flex-direction: row;
+  width: 400rpx;
+  align-items: center;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 30px;
+}
+
+.home-btn image{
+  width: 20rpx;
+  height: 20rpx;
+}
+
+/* 豆瓣评分 */
+.grade{
+	width: 700rpx;
+  height: 200rpx;
+  background-color: #fff;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.score{
+  width:650rpx;
+  height: 50rpx;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  font-size: 16px;
+  align-items: center;
+}
+
+.score-grade{
+	display: flex;
+	flex-direction: row;
+}
+
+.grade-item{
+  display: flex;
+  flex-direction: column;
+}
+
+.score-item{
+  display: flex;
+  flex-direction: row;
+}
+
+.score-item image{
+  width: 52rpx;
+  height: 11rpx;
+}
+
+.grade-item image{
+  width: 52rpx;
+  height: 11rpx;
+}
+
+/* 简介 */
+.introduction{
+  width: 730rpx;
+  /* background-color: darkorchid; */
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+  font-size: 20px;
+  font-weight: 500;
+}
+/* 文字的显示与隐藏 */
+.pay-hint-content{
+  margin-left: 5%;
+  margin-right: 5%;
+  margin-top: 10px;
+  font-size: 13px;
+  color: rgb(197, 195, 195);
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  text-overflow: ellipsis;
+  overflow: hidden;
+/*通过以上四行实现收缩功能*/
+}
+
+/* 箭头 */
+.img-ellipsis{
+  width: 30rpx;
+  height: 30rpx;
+  float: right;
+}
+
+.ellipsis{
+  -webkit-line-clamp:3; /*最多显示3行*/
+}
+.unellipsis{
+  -webkit-line-clamp:0; /*全部显示*/
+}
+
+/* 影人 */
+.box-star{
+  width: 730rpx;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  font-size: 20px;
+  font-weight: 500;
+}
+
+/* 明星图片 */
+.star-img{
+  width: 730rpx;
+  height: 380rpx;
+  /* background-color: rgb(144, 207, 243); */
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.star-img-1{
+  display: flex;
+  flex-direction: column;
+}
+
+.star-img image{
+  width: 160rpx;
+  height: 280rpx;
+  border-radius: 5px;
+}
+
+.name{
+  color: #333;
+  font-size: 15px;
+}
+
+.director{
+  color: rgb(100, 99, 99);
+  font-size: 14px;
+}
+
+/* 预告片、剧照  */
+.box-trailer{
+  width: 730rpx;
+  display: flex;
+  flex-direction: column;
+  justify-content:space-around ;
+}
+
+.trailer-item{
+  width: 730rpx;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.trailer-img{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.trailer-img image{
+  width: 280rpx;
+  height: 280rpx;
+}
+
+.trailer-quan{
+  color: #333;
+  font-size: 14px;
+}
+
+/* 短评 */
+.duanping{
+  width: 680rpx;
+  background-color: #fff;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  border: 1px #ccc;
+  /* background-color: cornflowerblue; */
+  margin: 20px 0px;
+}
+
+.duan{
+  display: flex;
+  flex-direction: column;
+}
+
+.duanp-item{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.toxiang{
+  display: flex;
+  flex-direction: column;
+}
+
+.toxiang-item{
+  display: flex;
+  flex-direction: row;
+  border-bottom: 1px solid #ccc;
+  margin: 20px 0;
+}
+
+.toxiang-img {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  /* overflow: hidden; */
+}
+
+.toxiang-img image{
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+}
+
+.toxiang-name{
+  display: flex;
+  flex-direction: column;
+}
+
+.content{
+  font-size: 12px;
+  color: #333;
+}
+
+.time{
+  font-size: 10px;
+  color:#eee;
+}
+
+.toxiang-name image{
+  width: 52px;
+  height: 11px;
+}

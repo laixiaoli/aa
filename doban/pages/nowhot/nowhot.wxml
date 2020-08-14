@@ -1,0 +1,94 @@
+<!--pages/nowhot/nowhot.wxml-->
+<view class="box-max">
+	<view class="hot-img">
+		<view class="hot-picture" wx:for="{{arr}}">
+			<image src="{{item.movieImg}}"></image>
+			<text>{{item.movieName}}</text>
+			<text>评分:{{item.movieSroce}}</text>
+		</view>
+		<!-- <view class="hot-picture">
+					<image src="../../image/timg.jpg"></image>
+					<text>千与千寻</text>
+					<text>暂无评分</text>
+				</view>
+				<view class="hot-picture">
+					<image src="../../image/timg.jpg"></image>
+					<text>千与千寻</text>
+					<text>暂无评分</text>
+				</view>
+				<view class="hot-picture">
+					<image src="../../image/boniu.jpg"></image>
+					<text>悬崖上的金鱼姬</text>
+					<text>暂无评分</text>
+				</view> -->
+	</view>
+
+	<view class="hot-img">
+		<view class="hot-picture" wx:for="{{arr1}}">
+			<image src="{{item.movieImg}}"></image>
+			<text>{{item.movieName}}</text>
+			<text>评分:{{item.movieSroce}}</text>
+		</view>
+		<!-- <view class="hot-picture">
+					<image src="../../image/dayu.jpg"></image>
+					<text>大鱼海棠</text>
+					<text>暂无评分</text>
+				</view>
+				<view class="hot-picture">
+					<image src="../../image/timg.jpg"></image>
+					<text>千与千寻</text>
+					<text>暂无评分</text>
+				</view>
+				<view class="hot-picture">
+					<image src="../../image/timg.jpg"></image>
+					<text>千与千寻</text>
+					<text>暂无评分</text>
+				</view> -->
+	</view>
+
+	<view class="hot-img">
+		<view class="hot-picture" wx:for="{{arr2}}">
+			<image src="{{item.movieImg}}"></image>
+			<text>{{item.movieName}}</text>
+			<text>评分:{{item.movieSroce}}</text>
+		</view>
+		<!-- <view class="hot-picture">
+					<image src="../../image/dayu.jpg"></image>
+					<text>大鱼海棠</text>
+					<text>暂无评分</text>
+				</view>
+				<view class="hot-picture">
+					<image src="../../image/timg.jpg"></image>
+					<text>千与千寻</text>
+					<text>暂无评分</text>
+				</view>
+				<view class="hot-picture">
+					<image src="../../image/timg.jpg"></image>
+					<text>千与千寻</text>
+					<text>暂无评分</text>
+				</view> -->
+	</view>
+
+	<view class="hot-img">
+		<view class="hot-picture" wx:for="{{arr3}}">
+			<image src="{{item.movieImg}}"></image>
+			<text>{{item.movieName}}</text>
+			<text>评分:{{item.movieSroce}}</text>
+		</view>
+		<!-- <view class="hot-picture">
+			<image src="../../image/dayu.jpg"></image>
+			<text>大鱼海棠</text>
+			<text>暂无评分</text>
+		</view>
+		<view class="hot-picture">
+			<image src="../../image/timg.jpg"></image>
+			<text>千与千寻</text>
+			<text>暂无评分</text>
+		</view>
+		<view class="hot-picture">
+			<image src="../../image/timg.jpg"></image>
+			<text>千与千寻</text>
+			<text>暂无评分</text>
+		</view> -->
+	</view>
+</view>

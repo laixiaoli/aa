@@ -1,0 +1,22 @@
+<template name="movie">
+    <view class="picture" bindtap="toDetail" data-movie-id="{{id}}">
+		<image src="{{images.small}}"></image> <!--电影图片-->
+		<text class="team-content">{{title}}</text><!--电影名字-->
+		<!-- <text wx:if="{{rating.average>0}}">评分:{{rating.average}}</text> -->
+		<!-- <text wx:else>暂无评分</text> -->
+		<view class="box-stars">
+			<view  wx:if="{{rating.average>0}}">
+				<block wx:for="{{star}}">
+					<!-- star是一个数组 -->
+					<!--star = [2,2,2,2,2]  表示全五星-->
+					<!--star = [2,2,2,1,0]  表示三星半-->
+					<image wx:if="{{item==2}}" src="../../image/xingxing1.png"></image>
+					<image wx:elif="{{item==1}}" src="../../image/banxing.png"></image>
+					<image wx:else src="../../image/xingxing.png"></image>
+				</block>
+			</view>
+			<text wx:if="{{rating.average>0}}">{{rating.average}}</text>
+			<text wx:else>暂无评分</text>
+		</view>
+	</view>
+</template>

@@ -1,0 +1,38 @@
+/* pages/dobanhot/dobanhot.wxss */
+.box-max{
+    display: flex;
+    flex-direction: column;
+    width: 750rpx;
+    height: 100%;
+    /* background-color: #ccc; */
+    align-items: center;
+    justify-content: space-around;
+}
+
+.hot-img {
+	width: 750rpx;
+	height: 350rpx;
+	display: flex;
+	flex-direction: row;
+    justify-content: space-around;
+	/* background-color:#ccc; */
+}
+
+.hot-picture {
+	width: 180rpx;
+	height: 280rpx;
+	display: flex;
+	flex-direction: column;
+    /* background-color:yellow; */
+    justify-content: space-around;
+}
+
+.hot-picture image {
+	width: 150rpx;
+    height: 220rpx;
+    border-radius: 4px;
+}
+
+.hot-picture text {
+	font-size: 0.625rem;
+}

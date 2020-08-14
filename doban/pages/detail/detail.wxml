@@ -1,0 +1,105 @@
+<!--pages/detail/detail.wxml-->
+<view class="box-max">
+	<!-- 何以为家 -->
+	<view class="home">
+		<view class="home-img">
+			<image src="{{moveId.images.small}}"></image>
+		</view>
+		<view class="home-item">
+			<text class="title">{{moveId.title}}</text>
+			<text class="title-1">{{moveId.year}}</text>
+			<text class="title-1">剧情/黎巴嫩 法国 美国/片长126分钟</text>
+			<view class="home-btn">
+				<button class="mini-btn" size="mini">
+					<image src="../../image/xiankan.png"></image>
+					想看
+				</button>
+				<button class="mini-btn" size="mini">
+					<image src="../../image/kongxinxingxing.png"></image>
+					看过
+				</button>
+			</view>
+		</view>
+	</view>
+	<!-- 豆瓣评分 -->
+	<view class="grade">
+		<view class="score">
+			<text>豆瓣评分</text>
+			<text>TM</text>
+			<text>></text>
+		</view>
+		<view class="score-grade">
+			<view class="grade-item">
+				<text>9.1</text>
+				<image src="../../image/starts4.png"></image>
+			</view>
+			<view class="score-item">
+				<image src="../../image/stars.png"></image>
+				<image src="../../image/stars.png"></image>
+			</view>
+		</view>
+	</view>
+	<!-- 简介 -->
+	<view class="introduction">
+		<text>简介</text>
+		<text class="pay-hint-content {{ellipsis?'ellipsis':'unellipsis'}}">{{moveId.summary}}</text>
+		<view class="bg-white-ellipsis" bindtap="ellipsis">
+			<image class='img-ellipsis' src="{{ellipsis?'../../image/ellipsis.png':'../../image/unellipsis.png'}}"></image>
+		</view>
+	</view>
+	<!-- 影人 -->
+	<view class="box-star">
+		<text>影人</text>
+		<!-- <view wx:for="{{moveId.directors}}">
+								<image src="{{item.avatars.small}}"></image>
+								<text class="name">{{item.name}}</text>
+								<text class="director">演导</text>
+		</view> -->
+		<view class="star-img">
+			<block wx:for="{{moveId.casts}}">
+				<view class="star-img-1">
+					<image src="{{item.avatars.small}}"></image>
+					<text class="name">{{item.name}}</text>
+					<text class="director">演员</text>
+				</view>
+			</block>
+		</view>
+	</view>
+
+	<!-- 预告片、剧照 -->
+	<view class="box-trailer">
+		<view class="trailer-item">
+			<text>预告片/剧照</text>
+			<text class="trailer-quan">全部934></text>
+		</view>
+		<view class="trailer-img">
+			<image src="../../image/timg.jpg"></image>
+			<image src="../../image/timg.jpg"></image>
+		</view>
+	</view>
+
+	<!-- 短评 -->
+	<view class="duanping">
+			<view class="duan">
+				<view class="duanp-item">
+					<text>短评</text>
+					<text class="trailer-quan">全部177339</text>
+				</view>
+				<block wx:for="{{moveId.popular_comments}}">
+					<view class="toxiang">
+						<view class="toxiang-item">
+							<view class="toxiang-img">
+								<image src="{{item.author.avatar}}"></image>
+							</view>
+							<view class="toxiang-name">
+								<text>{{item.author.name}}</text>
+								<image src="../../image/stars2.png"></image>
+								<text class="time">{{item.created_at}}</text>
+								<text class="content">{{item.content}}</text>
+							</view>
+						</view>
+					</view>
+				</block>
+			</view>
+	</view>
+</view>

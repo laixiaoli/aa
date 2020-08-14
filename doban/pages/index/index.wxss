@@ -1,0 +1,119 @@
+/* pages/index/index.wxss */
+/* @import "../../app.wxss"; */
+@import "../templates/movie-templates/movie-templates.wxss";
+page {
+	background-color: #12a531;
+}
+
+.box-max {
+	width: 750rpx;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+/* 搜索框 */
+.search {
+	width: 750rpx;
+	height: 60rpx;
+	/* background-color: burlywood; */
+	text-align: center;
+	display: flex;
+	justify-content: center;
+}
+
+.search input {
+	width: 650rpx;
+	height: 60rpx;
+	border-radius: 5px;
+	background-color: #fff;
+}
+
+/* 电影 */
+.box-video {
+	width: 750rpx;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	background-color: #fff;
+	margin-top: 14px;
+}
+
+/* 影院 近期热门剧集 豆瓣热门*/
+/* 影院热映 */
+.hotmovie{
+  height: 450rpx;
+  /* background-color: darkmagenta; */
+  display: flex;
+  flex-direction: column;
+  margin-top: 10px;
+}
+
+.hotmovie-item{
+  width: 730rpx;
+  height: 60rpx;
+  /* background-color: #ccc; */
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.hotmovie-item text{
+  font-size: 15px;
+}
+
+.more{
+  color: rgb(70, 241, 87);
+}
+
+/* 图片 */
+/* .hotmovie-img{
+  height:380rpx;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+} */
+
+/* .picture{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.picture image{
+  width: 180rpx;
+  height: 280rpx;
+  border-radius: 5px;
+}
+
+.picture text{
+  font-size: 12px;
+} */
+
+/* 文字超出显示省略号 */
+/* .team-content{
+  width: 180rpx;
+  display:-webkit-box;
+  -webkit-line-clamp:1;
+  overflow:hidden;
+  text-overflow:ellipsis;
+  -webkit-box-orient:vertical;
+  word-break:break-all;
+} */
+
+/* 星星图片 */
+/* .box-stars{
+	display: flex;
+  flex-direction: row;
+  line-height: 100%;
+}
+
+.box-stars image{
+	height: 25rpx;
+  width: 25rpx;
+} */

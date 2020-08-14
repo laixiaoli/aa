@@ -1,0 +1,9 @@
+<!--pages/hotmovie/hotmovie.wxml-->
+<import src="/pages/templates/movie-templates/movie-templates.wxml"/>
+<view class="box-max">
+	<view class="hotmovie-img">
+		<block wx:for="{{topMovie}}">
+			<template is="movie" data="{{...item}}"/>
+		</block>
+	</view>
+</view>

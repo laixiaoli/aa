@@ -1,0 +1,55 @@
+<!--pages/bangdan/bangdan.wxml-->
+<view class="box-max">
+    <view class="box-img">
+        <image src="../../image/shuaij.jpg"></image>
+    </view>
+    <view class="box-img">
+        <image src="../../image/shuaij.jpg"></image>
+    </view>
+    <!-- top250 -->
+    <view class="top">
+        <view class="top-img">
+            <image src="../../image/qianxun.jpg"></image>
+        </view>
+        <view class="top-item">
+            <text>1.肖生克的救赎<text>9.7分</text></text>
+            <text>2.霸王别姬<text>9.6分</text></text>
+            <text>3.阿甘正传<text>9.5分</text></text>
+        </view>
+    </view>
+    <!-- 华语电影 -->
+    <view class="top">
+        <view class="top-img">
+            <image src="../../image/qianxun.jpg"></image>
+        </view>
+        <view class="top-item">
+            <text>1.肖生克的救赎<text>9.7分</text></text>
+            <text>2.霸王别姬<text>9.6分</text></text>
+            <text>3.阿甘正传<text>9.5分</text></text>
+        </view>
+    </view>
+
+    <!-- 外语电影 -->
+    <view class="top">
+        <view class="top-img">
+            <image src="../../image/qianxun.jpg"></image>
+        </view>
+        <view class="top-item">
+            <text>1.肖生克的救赎<text>9.7分</text></text>
+            <text>2.霸王别姬<text>9.6分</text></text>
+            <text>3.阿甘正传<text>9.5分</text></text>
+        </view>
+    </view>
+
+    <!-- 冷门佳片 -->
+    <view class="top">
+        <view class="top-img">
+            <image src="../../image/qianxun.jpg"></image>
+        </view>
+        <view class="top-item">
+            <text>1.肖生克的救赎<text>9.7分</text></text>
+            <text>2.霸王别姬<text>9.6分</text></text>
+            <text>3.阿甘正传<text>9.5分</text></text>
+        </view>
+    </view>
+</view>

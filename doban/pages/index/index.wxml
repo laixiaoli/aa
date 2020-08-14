@@ -1,0 +1,58 @@
+<!--pages/index/index.wxml-->
+<!-- 引入template 模板-->
+<import src="/pages/templates/movie-templates/movie-templates.wxml" />
+
+<view class="box-max">
+	<view class="search">
+		<input type="text" placeholder="搜索"></input>
+	</view>
+	<view class="box-video">
+		<!-- 影院热映 -->
+		<view class="hotmovie">
+			<view class="hotmovie-item">
+				<text>影院热映</text>
+				<view bindtap="moreHot" data-type="0">
+					<!-- <button class="more">查看更多></button> -->
+					<text class="more">查看更多></text>
+				</view>
+			</view>
+			<view class="hotmovie-img">
+				<block wx:for="{{topMovies}}">
+					<template is="movie" data="{{...item}}" />
+				</block>
+			</view>
+		</view>
+
+		<!-- 豆瓣热门 -->
+		<view class="hotmovie">
+			<view class="hotmovie-item">
+				<text>豆瓣热门</text>
+				<view bindtap="moreHot" data-type="1">
+					<!-- <button class="more">查看更多></button> -->
+					<text class="more">查看更多></text>
+				</view>
+			</view>
+			<view class="hotmovie-img">
+				<block wx:for="{{cpmingMovies}}">
+					<template is="movie" data="{{...item}}" />
+				</block>
+			</view>
+		</view>
+
+		<!-- 近期热门剧集 -->
+		<view class="hotmovie">
+			<view class="hotmovie-item">
+				<text>近期热门剧集</text>
+				<view bindtap="moreHot" data-type="2">
+					<!-- <button class="more">查看更多></button> -->
+					<text class="more">查看更多></text>
+				</view>
+			</view>
+			<view class="hotmovie-img">
+				<block wx:for="{{hotMovies}}">
+					<template is="movie" data="{{...item}}" />
+				</block>
+			</view>
+		</view>
+	</view>
+</view>

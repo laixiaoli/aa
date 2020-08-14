@@ -1,0 +1,9 @@
+/* pages/hotmovie/hotmovie.wxss */
+@import "../templates/movie-templates/movie-templates.wxss";
+/* .box-max{
+    width: 700rpx;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+} */

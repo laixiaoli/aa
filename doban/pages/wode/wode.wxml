@@ -1,0 +1,63 @@
+<!--pages/wode/wode.wxml-->
+<view class="logo">
+    <button class="btn">登录</button>
+</view>
+<view class="book">
+    <view class="book-wode">
+        <text>我的书影音</text>
+        <view class="book-look">
+            <text>登录查看></text>
+        </view>
+    </view>
+    <view class="book-guanying">
+        <image src="../../image/movie.png"></image>
+        <view class="book-fengxi">
+            <view class="fenxi-item">
+                <text>观影分析</text>
+                <text class="look">0<text class="look">看过</text></text>
+            </view>
+            <view class="fenxi-item-1">
+                <text>标记10部影片</text>
+                <text>开启观影分析</text>
+            </view>
+            <view class="book-btn">
+                <button>立即开启</button>
+            </view>
+            <text>></text>
+        </view>
+    </view>
+    <view class="book-guanying">
+        <image src="../../image/book.png"></image>
+        <view class="book-fengxi">
+            <view class="fenxi-item">
+                <text>观影分析</text>
+                <text class="look">0<text class="look">看过</text></text>
+            </view>
+            <view class="fenxi-item-1">
+                <text>标记10部影片</text>
+                <text>开启观影分析</text>
+            </view>
+            <view class="book-btn">
+                <button>立即开启</button>
+            </view>
+            <text>></text>
+        </view>
+    </view>
+    <view class="book-guanying">
+        <image src="../../image/music.png"></image>
+        <view class="book-fengxi">
+            <view class="fenxi-item">
+                <text>观影分析</text>
+                <text class="look">0<text class="look">看过</text></text>
+            </view>
+            <view class="fenxi-item-1">
+                <text>标记10部影片</text>
+                <text>开启观影分析</text>
+            </view>
+            <view class="book-btn">
+                <button>立即开启</button>
+            </view>
+            <text>></text>
+        </view>
+    </view>
+</view>
