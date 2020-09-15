@@ -1,0 +1,894 @@
+* {
+	margin: 0px;
+	padding: 0px;
+}
+
+/* 父级 */
+.container {
+	width: 100%;
+	height: 100%;
+	display: flex;
+	/*column纵向排列*/
+	flex-direction: column;
+	/* background-color: #2e7fe4; */
+}
+
+/*头部*/
+.header {
+	width: 100%;
+	height: 60px;
+	background: linear-gradient(to bottom, rgba(0, 0, 0, .4), rgba(0, 0, 0, 0));
+	/*固定在顶部*/
+	position: fixed;
+	top: 0px;
+	display: flex;
+	/*row横向排列*/
+	flex-direction: row;
+	/*justify-content主轴对齐方式*/
+	justify-content: space-between;
+}
+
+.box_search {
+	/* background-color: #fff;
+	width: 100%;
+	height: 60px; */
+	/*固定在顶部*/
+	/* position: fixed;
+	top: 0px;
+	display: flex; */
+	/*row横向排列*/
+	/* flex-direction: row; */
+	/*justify-content主轴对齐方式*/
+	/* justify-content: space-between; */
+}
+
+.header_1 {
+	/*width: 312px;*/
+	flex: 1;
+	height: 28px;
+	margin: 7px 5px;
+	line-height: 24px;
+	padding: 2px 5px;
+	border-radius: 24px;
+	background-color: #fff;
+	color: #666;
+	font-size: .94rem;
+}
+
+.header_1 input {
+	width: 264px;
+	margin: 6px 8px;
+	border: none;
+	/*float: left;
+	margin-top: 6px;*/
+}
+
+.header_1 span:before {
+	width: 24px;
+	height: 31px;
+	background: url(../img/sousuo.png) no-repeat;
+	background-size: 21px auto;
+	background-position: 9px 7px;
+	position: relative;
+	content: "";
+	z-index: 1;
+	float: left;
+}
+
+.header_1 span input {
+	outline: none;
+}
+
+.header_2 {
+	width: 51px;
+	height: 44px;
+	background: url(../img/sousuo.png) no-repeat;
+	background-size: 21px auto;
+	background-position: 16px -29px;
+	display: block;
+	/*background-color: #2e7fe4; */
+}
+
+.header_2 span {
+	color: #fff;
+	font-size: .75rem;
+	line-height: 6;
+	margin: 0px 13px;
+}
+
+/*图片*/
+.picture {
+	height: 14.25rem;
+	background-image: linear-gradient(0deg,
+		/* #f1503b, #c82519 */
+		50%);
+	border-bottom-left-radius: 26%;
+	border-bottom-right-radius: 26%;
+	margin: 0 auto;
+}
+
+.picture img {
+	width: 375px;
+	height: 227px;
+	border-bottom-left-radius: 19%;
+	border-bottom-right-radius: 19%;
+}
+
+/* 中间 */
+.module {
+	width: 100%;
+	height: 100%;
+	background-color: #fafafc;
+}
+
+/*景点*/
+.scenic {
+	width: 100%;
+	height: 73px;
+	/* background-color: #ffffff; */
+	margin: -48px 0px 10px 0px;
+}
+
+.spot {
+	width: 351px;
+	height: 75px;
+	background-color: #ffffff;
+	margin: 0 auto;
+	border-radius: 18px;
+}
+
+/*攻略·景点*/
+.pic_spot {
+	width: 40px;
+	height: 40px;
+	background: url("../img/jingd.png") no-repeat;
+	display: block;
+	background-position: 4px 4px;
+	background-size: 40px;
+}
+
+.spot ul {
+	box-shadow: 0 2px 6px rgba(0, 0, 0, .08);
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	padding: 3px 0 8px;
+	z-index: 11;
+	align-items: center;
+	border-radius: 18px;
+}
+
+.spot ul li {
+	list-style: none;
+}
+
+.spot li a {
+	font-size: .75rem;
+	line-height: 16px;
+	color: #222;
+	text-decoration: none;
+}
+
+/*门票·玩乐*/
+.pic_around {
+	width: 40px;
+	height: 40px;
+	background: url("../img/jingd.png") no-repeat;
+	display: block;
+	background-position: 4px -37px;
+	background-size: 40px;
+}
+
+/*美食林*/
+.pic_food {
+	width: 40px;
+	height: 40px;
+	background: url("../img/jingd.png") no-repeat;
+	display: block;
+	background-position: 4px -77px;
+	background-size: 40px;
+}
+
+.food {
+	margin-left: 7px;
+}
+
+/*周边游*/
+.pic_oneday {
+	width: 40px;
+	height: 40px;
+	background: url("../img/jingd.png") no-repeat;
+	display: block;
+	background-position: 4px -120px;
+	background-size: 40px;
+}
+
+/*一日游*/
+.pic_strategy {
+	width: 40px;
+	height: 40px;
+	background: url("../img/jingd.png") no-repeat;
+	display: block;
+	background-position: 4px -158px;
+	background-size: 40px;
+}
+
+/* 酒店 */
+.grid {
+	width: 100%;
+	height: 205px;
+	display: flex;
+	flex-direction: column;
+	background-color: #fafafc;
+}
+
+.grid_1 {
+	width: 351px;
+	height: 66px;
+	border-top-left-radius: 8px;
+	border-top-right-radius: 8px;
+	background: linear-gradient(to right, #fa5956, #fb8650 54%);
+	margin: 0 auto;
+	color: #fff;
+	border-bottom: 1px solid #fff;
+	display: flex;
+	flex-direction: row;
+}
+
+.grid_2 {
+	width: 351px;
+	height: 66px;
+	margin: 0 auto;
+	background: linear-gradient(to right, #4b8fed, #53bced);
+	display: flex;
+	flex-direction: row;
+}
+
+.grid_3 {
+	width: 351px;
+	height: 66px;
+	margin: 0 auto;
+	border-bottom: 1px solid #fff;
+	background: linear-gradient(to right, #34c2aa, #6cd557);
+	border-bottom-left-radius: 8px;
+	border-bottom-right-radius: 8px;
+	display: flex;
+	flex-direction: row;
+}
+
+/* 酒店 */
+.c_hotel {
+	width: 31%;
+	height: 66px;
+	background: url(../img/hotel.png) no-repeat;
+	/* background-color: #53BCED; */
+	border-right: 1px solid #f2f2f2;
+	background-size: 81px auto;
+	border-top-left-radius: 8px;
+	background-position: 27px 29px;
+}
+
+.c_hotel span {
+	padding-left: 11px;
+	line-height: 54px;
+	font-size: 14px;
+}
+
+/* 民宿 */
+.hotel_inn {
+	width: 23%;
+	height: 66px;
+	border-right: 1px solid #f2f2f2;
+	background: url(../img/mins.png) no-repeat;
+	background-size: 38px auto;
+	background-position: 0px 45px;
+	/* background-color: #5ba0dd; */
+}
+
+.hotel_inn span {
+	padding-left: 6px;
+	line-height: 61px;
+	font-size: 14px;
+}
+
+/* 特价 */
+.hotelsale {
+	width: 47%;
+	height: 66px;
+	background: linear-gradient(to right, #ffbc49, #ffd252);
+	border-top-right-radius: 8px;
+}
+
+.hotelsale_img {
+	padding: 35px 0;
+	background: url(../img/hot.png) no-repeat;
+	background-size: 100% auto;
+	text-align: center;
+	position: relative;
+	width: 100%;
+	color: #a05416;
+	display: block;
+}
+
+.tejia {
+	position: relative;
+	bottom: 48px;
+	left: 41px;
+	color: #a05416;
+}
+
+/* 机票 */
+.g_flight {
+	width: 31%;
+	height: 66px;
+	border-right: 1px solid #f2f2f2;
+	background: url(../img/flight.png) no-repeat;
+	background-size: 79px auto;
+	background-position: 27px 32px;
+	/* background-color: #FA5956; */
+}
+
+.g_flight span {
+	color: #fff;
+	font-size: 14px;
+	padding-left: 11px;
+	line-height: 54px;
+}
+
+/* 火车票 */
+.train {
+	width: 23%;
+	height: 66px;
+	border-right: 1px solid #f2f2f2;
+	background: url(../img/train.png) no-repeat;
+	background-size: 64px auto;
+	background-position: 0px 38px;
+	/* background-color: coral; */
+}
+
+.train span {
+	padding-left: 16px;
+	line-height: 61px;
+	color: #fff;
+	font-size: 14px;
+}
+
+/* 汽车船票 */
+.bus {
+	width: 23%;
+	height: 66px;
+	border-right: 1px solid #f2f2f2;
+	/* background-color: chocolate; */
+}
+
+.bus span {
+	padding-left: 9px;
+	line-height: 60px;
+	color: #fff;
+	font-size: 14px;
+}
+
+/* 专车 */
+.car {
+	width: 23%;
+	height: 66px;
+	/* background-color: #FA5956; */
+}
+
+.car span {
+	padding-left: 4px;
+	line-height: 60px;
+	color: #fff;
+	font-size: 14px;
+}
+
+/* 旅游 */
+.vacation {
+	width: 31%;
+	height: 66px;
+	background: url(../img/travel.png) no-repeat;
+	background-size: 64px auto;
+	background-position: 18px 21px;
+	/* background-color: #FA5956; */
+	background-size: 94px auto;
+	border-bottom-left-radius: 8px;
+	border-right: 1px solid #f2f2f2;
+}
+
+.vacation span {
+	color: #fff;
+	font-size: 14px;
+	padding-left: 11px;
+	line-height: 54px;
+}
+
+/* 高铁游 */
+.travel {
+	width: 23%;
+	height: 66px;
+	border-right: 1px solid #f2f2f2;
+	background: url(../img/dingzhi.png) no-repeat;
+	background-size: 61px auto;
+	background-position: 0px 45px;
+	/* background-color: coral; */
+}
+
+.travel span {
+	color: #fff;
+	font-size: 14px;
+	padding-left: 16px;
+	line-height: 57px;
+}
+
+/* 邮轮游 */
+.cruise {
+	width: 23%;
+	height: 66px;
+	border-right: 1px solid #f2f2f2;
+	/* background-color: chocolate; */
+}
+
+.cruise span {
+	color: #fff;
+	font-size: 14px;
+	padding-left: 16px;
+	line-height: 59px;
+}
+
+/* 定制游 */
+.custom {
+	width: 23%;
+	height: 66px;
+	/* background-color: #FA5956; */
+}
+
+.custom span {
+	color: #fff;
+	font-size: 14px;
+	padding-left: 16px;
+	line-height: 59px;
+}
+
+/* 自由行 */
+.entry {
+	width: 100%;
+	height: 119px;
+	margin-top: 11px;
+	display: flex;
+	flex-direction: column;
+	background-color: #fafafc;
+}
+
+.entry_1 {
+	width: 351px;
+	height: 58px;
+	margin: 0 auto;
+	background-color: #fafafc;
+}
+
+.entry_2 {
+	width: 351px;
+	height: 58px;
+	margin: 0 auto;
+	background-color:#fafafc;
+}
+
+.entry_1 ul {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	padding: 3px 0 8px;
+	z-index: 11;
+	align-items: center;
+}
+
+.entry_2 ul {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	padding: 3px 0 8px;
+	z-index: 11;
+	align-items: center;
+}
+
+.entry_1 li {
+	list-style: none;
+}
+
+.entry_2 li {
+	list-style: none;
+}
+
+/* 自由行 */
+.sub_travel {
+	width: 28px;
+	height: 28px;
+	background: url(../img/subnav.png) no-repeat;
+	background-position: 1px 1px;
+	background-size: 28px auto;
+	display: block;
+	margin-top: 4px;
+}
+
+.entry_1 li a {
+	font-size: .63rem;
+	color: #222;
+	line-height: 1;
+	text-decoration: none;
+}
+
+.entry_2 li a {
+	font-size: .63rem;
+	color: #222;
+	line-height: 1;
+	text-decoration: none;
+	margin-left: 55px;
+}
+
+/* WiFi电话卡 */
+.wifi {
+	width: 28px;
+	height: 28px;
+	background: url(../img/subnav.png) no-repeat;
+	background-position: 1px -27px;
+	background-size: 28px auto;
+	display: block;
+	margin-top: 4px;
+	margin-left: 9px;
+}
+
+/* 保险·签证 */
+.insurance {
+	width: 28px;
+	height: 28px;
+	background: url(../img/subnav.png) no-repeat;
+	background-position: 1px -55px;
+	background-size: 28px auto;
+	display: block;
+	margin-top: 4px;
+	margin-left: 4px;
+}
+
+/* 换钞·购物 */
+.exchange {
+	width: 28px;
+	height: 28px;
+	background: url(../img/subnav.png) no-repeat;
+	background-position: 1px -82px;
+	background-size: 28px auto;
+	display: block;
+	margin-top: 4px;
+	margin-left: 4px;
+}
+
+/* 当地向导 */
+.guide {
+	width: 28px;
+	height: 28px;
+	background: url(../img/subnav.png) no-repeat;
+	background-position: 1px -112px;
+	background-size: 28px auto;
+	display: block;
+	margin-top: 4px;
+	margin-left: 4px;
+}
+
+/* 特价机票 */
+.sale {
+	width: 28px;
+	height: 28px;
+	background: url(../img/subnav.png) no-repeat;
+	background-position: 0px -137px;
+	background-size: 28px auto;
+	display: block;
+	margin-top: -18px;
+	margin-left: 5px;
+}
+
+/* 礼品卡 */
+.finance {
+	width: 28px;
+	height: 28px;
+	background: url(../img/subnav.png) no-repeat;
+	background-position: 0px -164px;
+	background-size: 28px auto;
+	display: block;
+	margin-top: -18px;
+	margin-left: 3px;
+}
+
+.finance_1 {
+	margin-left: 2px;
+}
+
+/* 申卡·借钱 */
+.credit {
+	width: 28px;
+	height: 28px;
+	background: url(../img/subnav.png) no-repeat;
+	background-position: 0px -192px;
+	background-size: 28px auto;
+	display: block;
+	margin-top: -18px;
+	margin-left: 9px;
+}
+
+/* 旅拍 */
+.photograph {
+	width: 28px;
+	height: 28px;
+	background: url(../img/subnav.png) no-repeat;
+	background-position: 0px -220px;
+	background-size: 28px auto;
+	display: block;
+	margin-top: -18px;
+	margin-left: 9px;
+}
+
+.lv {
+	margin-left: 13px;
+}
+
+/* 更多 */
+.c_more {
+	width: 28px;
+	height: 28px;
+	background: url(../img/subnav.png) no-repeat;
+	background-position: 0px -250px;
+	background-size: 28px auto;
+	display: block;
+	margin-top: -18px;
+	margin-left: 9px;
+}
+
+.lv {
+	margin-left: 13px;
+}
+
+/* 热门活动 */
+.huodong {
+	width: 100%;
+	height: 136px;
+	/* background-color: #53BCED; */
+	display: flex;
+	flex-direction: column;
+	padding-top: 1px;
+	background-position: left top;
+	border-top: 1px solid #dbdbdb;
+	margin-top: 2px;
+}
+
+.hot {
+	width: 375px;
+	height: 136px;
+	/* background-color: #6CD557; */
+	margin: 0 auto;
+	display: flex;
+	flex-direction: column;
+}
+
+.sales_hd {
+	width: 375px;
+	height: 45px;
+	padding-bottom: 1px;
+	background-position: left bottom;
+	border-bottom: 1px solid #dbdbdb;
+	margin: 0 auto;
+	background-color: #fff;
+}
+
+.sales_hd ul {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	padding: 3px 0 8px;
+	z-index: 11;
+	align-items: center;
+}
+
+.sales_hd li {
+	list-style: none;
+}
+
+.huodong_1 {
+	width: 49px;
+	height: 21px;
+	background: url(../img/home.png) no-repeat;
+	background-size: 55px auto;
+	background-position: -1px -13px;
+	transform: translateY(-50%);
+	display: block;
+	margin-left: 4px;
+	margin-top: 24px;
+	float: left;
+}
+
+.gg {
+	width: 36px;
+	height: 15px;
+	background: url(../img/icon-gg.png) no-repeat;
+	background-size: 25px auto;
+	display: block;
+	margin-left: 57px;
+	margin-top: 16px;
+}
+
+.sales_hd li a {
+	background: linear-gradient(to right, #ff4e63, #ff6cc9);
+	position: relative;
+	right: 8px;
+	top: -3px;
+	display: inline-block;
+	padding: 0px 17px 0 10px;
+	height: 20px;
+	line-height: 20px;
+	color: #fff;
+	border-radius: 50px;
+	font-size: .75rem;
+	text-decoration: none;
+}
+
+.sales_hd li a:after {
+	content: '';
+	position: absolute;
+	top: 6.5px;
+	right: 8px;
+	width: 5px;
+	height: 5px;
+	border: 2px solid #fff;
+	border-width: 0 2px 2px 0;
+	transform: rotate(-45deg);
+}
+
+.sales_bd {
+	width: 375px;
+	height: 82px;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	/* background-color: #FA5956; */
+}
+
+.activity {
+	width: 187px;
+	height: 80px;
+	border-right: 1px solid #f2f2f2;
+	background: url(../img/giz.png) no-repeat;
+	background-size: 100%;
+	/* background-color: #FFBC49; */
+}
+
+.activity_1 {
+	width: 187px;
+	height: 80px;
+	background: url(../img/lingqua.jpg) no-repeat;
+	background-size: 100%;
+	/* background-color:#abcadb; */
+}
+
+/* 尾部 */
+.foot {
+	width: 100%;
+	height: 124px;
+	/* background-color: blueviolet; */
+}
+
+.foot_1 {
+	width: 375px;
+	height: 124px;
+	background-color: #fff;
+	margin: 0 auto;
+	display: flex;
+	flex-direction: column;
+}
+
+.footer {
+	width: 375px;
+	height: 61px;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	border-bottom: 1px solid #dbdbdb;
+	/* background-color: #FB8650; */
+}
+
+.footer a {
+	text-decoration: none;
+}
+
+.footer img {
+	margin-left: 20px;
+	margin-top: 10px;
+}
+
+.footer span {
+	color: #333;
+	font-size: 12px;
+}
+
+.wode {
+	margin-left: 18px;
+}
+
+.footer_1 {
+	width: 375px;
+	height: 60px;
+	background-color: #dbdbdb;
+}
+
+.map {
+	width: 240px;
+	height: 30px;
+	display: flex;
+	flex-direction: row;
+	/* justify-content: space-around; */
+	/* background-color: #34C2AA; */
+	margin: 0 auto;
+}
+
+.map a {
+	padding: 13px 0px;
+	font-size: 12px;
+	color: #666;
+	text-decoration: none;
+}
+
+.map p {
+	float: left;
+}
+
+.global {
+	display: block;
+	width: 11px;
+	height: 11px;
+	background: url(../img/un_icon_sites.png) no-repeat;
+	background-position: 0px -160px;
+	background-size: 30px auto;
+	float: left;
+	margin: 3px 2px 0px 6px;
+}
+
+.triangle {
+	display: block;
+	border: 1px solid #666;
+	border-width: 0 1px 1px 0;
+	width: 5px;
+	height: 5px;
+	transform: rotate(45deg);
+	position: relative;
+	left: 80px;
+	bottom: -4px;
+}
+
+.diannao {
+	position: relative;
+	left: 27px;
+}
+
+.map_1 {
+	width: 240px;
+	height: 30px;
+	/* background-color: #FFBC49; */
+	margin: 0 auto;
+	display: flex;
+	flex-direction: row;
+}
+
+.map_1 p {
+	padding: 5px 5px;
+	color: #999;
+	font-size: 12px;
+}
+
+.map_1 span {
+	color: #999;
+	font-size: 12px;
+	padding: 6px 0px;
+}
+
+.map_1 a {
+	color: #999;
+	text-decoration: none;
+	font-size: 12px;
+	padding: 6px 0px;
+}

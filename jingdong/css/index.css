@@ -1,0 +1,629 @@
+*{
+	padding: 0px;
+	margin: 0px;
+}
+
+/*swiper轮播样式*/
+html, body {
+      position: relative;
+      height: 100%;
+    }
+    body {
+      background: #eee;
+      font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+      font-size: 14px;
+      color:#000;
+      margin: 0;
+      padding: 0;
+    }
+    .swiper-container {
+      width: 100%;
+      height: 100%;
+
+    }
+    .swiper-slide {
+      text-align: center;
+      font-size: 18px;
+     /* background: #fff;*/
+
+      /* Center slide text vertically */
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: -webkit-flex;
+      display: flex;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      -webkit-justify-content: center;
+      justify-content: center;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      -webkit-align-items: center;
+      align-items: center;
+    }
+
+.swiper-container-horizontal>.swiper-pagination-bullets, 
+.swiper-pagination-custom, 
+.swiper-pagination-fraction{
+    bottom: -4px;
+    left: 0;
+    width: 100%;
+}
+
+/*导航*/
+.sousuo{
+	width: 100%;
+	height: 44px;
+	background-color:#c82519;
+}
+
+/*多选*/
+.picture{
+	width:40px;
+	height: 44px;
+	/*background-color:#200e0e;*/
+	float: left;
+}
+
+.picture img{
+	margin-top: 16px;
+    margin-left: 13px;
+    width: 1.375rem;
+    height: 1.125rem;
+}
+
+/*搜索*/
+
+.search{
+	width:100%;
+	height: 44px;
+	/*background-color: #fff;*/
+	position: absolute;
+	z-index: 100;
+}
+
+.search_1{
+    height: 30px;
+    margin-top: 6px;
+    border-radius: 27px;
+    display: block;
+    margin:7px 41px 0px 40px;
+    background-color: #fff;
+    overflow: hidden;
+}
+
+/*京东logo*/
+.picture_1{
+	width:20px;
+	height: 15px;
+	background: url("../img/logo.png") no-repeat;
+	background-size: 20px 15px;
+    margin: 8px 8px 0 15px;
+    position: relative;
+    z-index: 1;
+    float: left;
+}
+
+.picture_1:after{
+	content: "";
+    position: absolute;
+    border-right: 1px solid #696565;
+    top: 0;
+    left: 26px;
+    height: 16px;
+}
+
+/*搜索图标*/
+.picture_2{
+	width: 2.1875rem;
+    height: 1.5625rem;
+    background: url("../img/sousuo.png") no-repeat;
+    background-size: 20px 15px;
+    margin: 8px 4px 0 2px;
+    position: relative;
+    z-index: 1;
+    float: left;
+}
+
+/* 文本框 */
+.search_1 input{
+	height: 30px;
+    border: none;
+}
+
+/*登录*/
+.register{
+	width:40px;
+	height: 44px;
+	/*background-color:#ccc;*/
+	float: right;
+}
+
+.register span{
+	font-size: 0.875rem;
+    color: #fff;
+    line-height: 44px;
+    margin-left: 6px;
+}
+
+/* 轮播 */
+.lunbo{
+	background-image: linear-gradient(0deg, #f1503b, #c82519 50%);
+	position: relative;
+	top: 0;
+	/* left: -25%; */
+	height:10.25rem;
+	/* width: 150%; */
+	border-bottom-left-radius: 100%;
+	border-bottom-right-radius: 100%;
+	background-color: #EC971F;
+}
+
+.lunbo_1{
+	width: 375px;
+	height: 140px;
+	margin: 0 auto;
+}
+
+.lunbo_2{
+    width: 360px;
+    height: 140px;
+    border-radius: 9px;
+    position: relative;
+    bottom: 89px;
+    left: 10px;
+    /*background-color:#eee;*/
+}
+
+.lunbo_1 img{
+	width: 353px;
+    height: 140px;
+    border-radius: 9px;
+}
+
+/* 中间内容 */
+.content{
+	position: relative;
+    bottom: 79px;
+    width: 100%;
+    /* height: 160px; */
+    /*background-color: red;*/
+    margin: 0 auto;
+}
+
+/* 超市 */
+.con_1{
+    width:100%;
+	/*width: 375px;*/
+    height: 193px;
+	background-color: #f6f6f6;
+	margin: 0 auto;
+}
+
+.con_up{
+	height: 80px;
+	/* background-color: #31B0D5; */
+}
+
+.box{
+	width: 20%;
+    text-align: center;
+    display: block;
+    float: left;
+    line-height: 30px;
+}
+
+.box span{
+	font-size:1.5rem;
+	color: #666;
+}
+
+.con_up li{
+	list-style: none;
+}
+
+.con_up img{
+	width: 4.5rem;
+    margin-top: .5rem;
+}
+
+/* 充值缴费 */
+.con_down{
+	height: 80px;
+	/* background-color: #C1E2B3; */
+}
+
+.con_down li{
+	list-style: none;
+}
+
+.con_down img{
+	width:4.5rem;
+    margin-top: .5rem;
+}
+
+/* 京东秒杀 */
+.con_2{
+	width: 100%;
+	height: 155px;
+	/*background-color: #46B8DA;*/
+	margin: 0 auto;
+    margin-top: 13px;
+}
+
+.tit_img{
+	width:375px;
+	height: 34px;
+	/*background-color: #f1e4a4;*/
+    margin: 0 auto;
+}
+
+.tit_img_1{
+	height: 34px;
+	background: url("../img/bg1.png") no-repeat;
+	background-size: contain;
+}
+
+.seckill{
+	float: left;
+    height: 1.35rem;
+    margin-top:7px;
+    margin-right:0.25rem;
+    margin-left: 0.5rem;
+    font-size: 0.7rem;
+    color: #333;
+    letter-spacing: 0;
+    line-height: 1.2;
+}
+
+.tit_img_2{
+	width: 95px;
+    height: 17px;
+    border: 1px solid #f2270c;
+    border-radius: 14px;
+    /*内联块*/
+    display: inline-block;
+}
+
+.seckill_nth{
+	height: 100%;
+    background-image: linear-gradient(90deg,#f10001,#fe4e18);
+    border-radius: 2.4rem;
+    font-size: 0.6rem;
+    color: #fff;
+    padding-right: 0.5rem;
+    padding-left: 0.25rem;
+    float: left;
+    position: relative;
+    left: -1px;
+    margin-right: 1.2rem;
+    line-height: 1.4;
+}
+
+.seckill span{
+	position: relative;
+    bottom: 4px;
+} 
+
+.tit_img_1 p{
+	position: relative;
+    left: 95px;
+    bottom: 18px;
+    color: #f2270c;
+}
+
+.more{
+	width: 70px;
+    height: 34px;
+    /*background-color: #4b0202;*/
+    float: right;
+    color: #f23030;
+    font-size:0.6rem;
+   	line-height: 34px;
+}
+
+.more img{
+	display: inline-block;
+    width: 1rem;
+    height: 1rem;
+    background-size: cover;
+    position: relative;
+    left: 0.5rem;
+    top: -0.2rem;
+}
+
+/*京东秒杀下面*/
+
+.floor_container{
+	width:375px;
+	height: 116px;
+	/*background-color: #ccc;*/
+}
+
+.floor_container li{
+	float: left;
+	list-style:none;
+}
+
+.miaosha{
+	width: 75px;
+    height: 115px;
+    padding: 0 .25rem;
+   /* background-color: #853838;*/
+}
+
+.miaosha img{
+	width: 66px;
+    height: 66px;
+    margin-top: 10px;
+}
+
+.new{
+	width:72px;
+	height: 36px;
+	/*background-color: #eee;*/
+}
+
+.new_1{
+    margin-top: .5rem;
+    display: block;
+    color: #f2270c;
+    font-size: .7rem;
+    line-height: 1.7rem;
+    height: .7rem;
+    text-align: center; 
+}
+
+.new_2{
+    margin-top: .5rem;
+    display: block;
+    color: #999;
+    font-size: .7rem;
+    line-height: 1.7rem;
+    height: .7rem;
+    text-align: center; 
+}
+
+/*新人专享*/
+.show{
+    width:100%;
+    height: 117px;
+    /*background-color:#b32222;*/
+}
+
+.show_img{
+    width: 375px;
+    height: 119px;
+    margin: 0 auto;
+}
+
+.xinr{
+   width:50%;
+   height:7.2rem;
+   border-radius: 15px 0px 0px 15px;
+   float: left;
+}
+
+.xinr img{
+    width: 90%;
+    height: 6.97rem;
+    border-radius: 15px 0px 0px 15px;
+    float: left;
+    margin-left: 19px;
+}
+
+.xinr_1{
+   width:50%;
+   height: 9.87rem;
+   border-radius: 15px 0px 0px 15px;
+   float: right;
+}
+
+.xinr_1 img{
+    width: 90%;
+    height: 6.97rem;
+    border-radius: 0px 15px 15px 0px;
+}
+
+/*省省卡*/
+.shengsheng{
+    width:100%;
+    height: 60px;
+   /* background-color: #ccc;*/
+}
+
+.ka{
+    width:375px;
+    height: 49px;
+    margin:0 auto;
+}
+
+.ka img{
+    width:375px;
+    height: 49px;
+}
+
+/*东家小院*/
+.dongjia{
+    width:100%;
+    height: 40px;
+   /* background-color: #ccc;*/
+}
+
+.jia{
+    width:375px;
+    height: 35px;
+    margin:0 auto;
+}
+
+.jia img{
+    width:375px;
+    height: 35px;
+}
+
+/*东家小院下面*/
+.dongjia_down{
+    width:100%;
+    height: 240px;
+    /*background-color: #ccc;*/
+}
+
+.xia{
+    width:375px;
+    height: 240px;
+    margin:0 auto;
+/*    background-color:#97d3e1;*/
+}
+
+.xia_1{
+    width:187px;
+    height: 240px;
+    /*background-color:#eee;*/
+    float: left;
+}
+
+.xia_2{
+    width:187px;
+    height: 240px;
+    /*background-color:#83a3c3;*/
+    float: right;
+}
+
+.xiaji{
+    width:177px;
+    height: 36px;
+    /*background-color: #ccc;*/
+	padding-left: 19px;
+}
+
+.xiaji span{
+    background: linear-gradient(90deg, #45CAFF,#1471FB);
+    font-weight: 700;
+    font-size: .8rem;
+    line-height: 1.125rem;
+    display: inline-block;
+    max-width: 100%;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.xiaji p{
+	color: #666771;
+	overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+}
+
+.xia_tu{
+	width:187px;
+	height: 65px;
+	/*background-color:#66AFE9;*/
+	margin-left: 18px;
+    margin-top: 6px;
+}
+
+.xia_tu_1 img{
+	width: 60px;
+    margin-top: 3px;
+}
+
+.xia_tu_2 img{
+	width: 60px;
+    margin-top: 3px;
+	margin-left: 25px;
+}
+
+/* 租房贵族 */
+.nanxie{
+	width: 187px;
+	height: 120px;
+	/*background-color: #CE8483;*/
+}
+
+.nanxie_1{
+	width: 88px;
+	height: 120px;
+	/*background-color: #5BC0DE;*/
+	float: left;
+	margin-left: 11px;
+}
+
+.nanxie_2{
+	width: 88px;
+	height: 120px;
+	/*background-color:#66AFE9;*/
+	float: right;
+}
+
+.nanxie_1 span{
+	font-weight: 700;
+    font-size: .8rem;
+    line-height:3.125rem;
+    display: inline-block;
+    max-width: 100%;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+	color: #333
+}
+
+.nanxie_1 p{
+	color: #666771;
+	font-size: 0.875rem;
+    margin-top: -15px;
+}
+
+.nanxie_2 span{
+	font-weight: 700;
+    font-size: .8rem;
+    line-height: 3.125rem;
+    display: inline-block;
+    max-width: 100%;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+	color: #333
+}
+
+.nanxie_2 p{
+	color: #666771;
+	font-size: 0.875rem;
+    margin-top: -15px;
+}
+
+.nanxie_1 img{
+	width: 60px;
+}
+
+.nanxie_2 img{
+	width: 60px;
+}
+
+/*底部*/
+.foot{
+    width:100%;
+    height: 50px;
+    background-color:#fff;
+    /*固定在低部*/
+    position: fixed;
+    bottom: 0px;
+}
+
+.foot_1{
+	width: 375px;
+	height:50px;
+	/* background-color: #CE8483; */
+	margin: 0 auto;
+}
+
+.foot_1 li{
+	float: left;
+	list-style: none;
+}
+
+.foot_1 img{
+	height: 50px;
+    margin-top: -7px;
+	margin-left: 8px;
+}

@@ -1,0 +1,539 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<!-- 移动设备优先 -->
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" />
+		<link rel="stylesheet" type="text/css" href="css/index.css" />
+	</head>
+	<body>
+		<nav class="navbar navbar-default">
+			<!-- container表示不全屏 -->
+			<div class="container">
+				<!-- Brand and toggle get grouped for better mobile display -->
+				<div class="navbar-header">
+					<!-- 当前页面宽度不足以显示所有导航菜单的时候 显示汉堡菜单
+					  data-target="#bs-example-navbar-collapse-1"和后面的id="bs-example-navbar-collapse-1"对应
+					 -->
+					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1"
+					 aria-expanded="false">
+						<span class="sr-only">Toggle navigation</span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+					<a class="navbar-brand" href="#">
+						<img src="img/topbar.png">
+					</a>
+				</div>
+				<!-- 菜单 -->
+				<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+					<ul class="nav navbar-nav">
+						<li class="active"><a href="#">发现音乐</a></li>
+						<li>
+							<a href="#">朋友</a>
+						</li>
+						<li>
+							<a href="#">商城</a>
+						</li>
+						<li>
+							<a href="#">音乐人</a>
+						</li>
+						<li>
+							<a href="#">下载客户端</a>
+						</li>
+					</ul>
+					<!-- 搜索框和按钮 -->
+					<ul class="nav navbar-nav navbar-right">
+						<form class="navbar-form navbar-left">
+							<div class="form-group">
+								<input type="text" class="form-control" placeholder="音乐/视频/电台/用户">
+							</div>
+							<button type="submit" class="btn btn-default">创作者中心</button>
+						</form>
+						<li><a href="#">登录</a></li>
+					</ul>
+				</div><!-- /菜单 -->
+			</div><!-- /.container-fluid -->
+			</div>
+		</nav>
+		<!-- 轮播 -->
+		<div class="navbar navbar-default_db">
+			<div class="container">
+				<div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+					<!-- Indicators -->
+					<ol class="carousel-indicators">
+						<li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+						<li data-target="#carousel-example-generic" data-slide-to="1"></li>
+						<li data-target="#carousel-example-generic" data-slide-to="2"></li>
+						<li data-target="#carousel-example-generic" data-slide-to="3"></li>
+						<li data-target="#carousel-example-generic" data-slide-to="4"></li>
+						<li data-target="#carousel-example-generic" data-slide-to="5"></li>
+					</ol>
+
+					<!-- 图片 -->
+					<div class="carousel-inner" role="listbox">
+						<div class="item active">
+							<!-- alt="..."设置图片不显示显示文字，如果图片正常显示，提示文字不显示 -->
+							<img src="img/shaon.png" alt="...">
+							<div class="carousel-caption">
+								<!-- 图片的介绍文字 -->
+							</div>
+						</div>
+						<div class="item">
+							<img src="img/yexuan.png" alt="...">
+							<div class="carousel-caption">
+								<!-- 图片的介绍文字 -->
+							</div>
+						</div>
+						<div class="item">
+							<img src="img/saye.png" alt="...">
+							<div class="carousel-caption">
+								<!-- 图片的介绍文字 -->
+							</div>
+						</div>
+						<div class="item">
+							<img src="img/zhous.png" alt="...">
+							<div class="carousel-caption">
+								<!-- 图片的介绍文字 -->
+							</div>
+						</div>
+						<div class="item">
+							<img src="img/tianqi.png" alt="...">
+							<div class="carousel-caption">
+								<!-- 图片的介绍文字 -->
+							</div>
+						</div>
+						<div class="item">
+							<img src="img/haox.png" alt="...">
+							<div class="carousel-caption">
+								<!-- 图片的介绍文字 -->
+							</div>
+						</div>
+						<div class="item">
+							<img src="img/huac.png" alt="...">
+							<div class="carousel-caption">
+								<!-- 图片的介绍文字 -->
+							</div>
+						</div>
+					</div>
+
+					<!-- 按钮 -->
+					<a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+						<span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+						<span class="sr-only">Previous</span>
+					</a>
+					<a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+						<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+						<span class="sr-only">Next</span>
+					</a>
+				</div>
+			</div>
+		</div>
+		<!-- 歌单 -->
+		<div class="navbar navbar-default_db">
+			<div class="container">
+				<div id="frame">
+					<!-- 歌单 -->
+					<div class="row">
+						<div class="col-lg-8 col_l">
+							<!-- 热门推荐 -->
+							<ul class="nav nav-pills">
+								<li role="presentation">
+									<a href="#">
+										<img src="img/yuanq.png">
+									</a></li>
+								<li role="presentation"><a href="#" id="rem">热门推荐</a></li>
+								<li role="presentation"><a href="#" class="hua">华语</a></li>
+								<li role="presentation" class="hua_1">|</li>
+								<li role="presentation"><a href="#" class="hua">流行</a></li>
+								<li role="presentation" class="hua_1">|</li>
+								<li role="presentation"><a href="#" class="hua">摇滚</a></li>
+								<li role="presentation" class="hua_1">|</li>
+								<li role="presentation"><a href="#" class="hua">民谣</a></li>
+								<li role="presentation" class="hua_1">|</li>
+								<li role="presentation"><a href="#" class="hua">电子</a></li>
+								<li role="presentation"><a href="#" class="hua">更多</a></li>
+								<li role="presentation" id="more">
+									<a href="#">
+										<img src="img/jianto.png">
+									</a>
+								</li>
+							</ul>
+							<div class="row">
+								<div class="col-sm-3 col-xs-6 col_img">
+									<!-- 左边图片 -->
+									<img src="img/music1.jpg">
+									<div class="tup_1">
+										<a href="#"><span class="glyphicon glyphicon-headphones">82万</span></a>
+										<a href="#"><span class="glyphicon glyphicon-expand"></span></a>
+									</div>
+									<div class="content">
+										<a href="#">情感博物馆‖想念是拥有的另外一种方式</a>
+									</div>
+								</div>
+								<div class="col-sm-3 col-xs-6 col_img">
+									<img src="img/music4.jpg">
+									<div class="tup_1">
+										<a href="#"><span class="glyphicon glyphicon-headphones">357万</span></a>
+										<a href="#"><span class="glyphicon glyphicon-expand"></span></a>
+									</div>
+									<div class="content">
+										<a href="#">【新声出道三月期】净土</a>
+									</div>
+								</div>
+								<div class="col-sm-3 col-xs-6 col_img">
+									<img src="img/zs.jpg">
+									<div class="tup_1">
+										<a href="#"><span class="glyphicon glyphicon-headphones">156万</span></a>
+										<a href="#"><span class="glyphicon glyphicon-expand"></span></a>
+									</div>
+									<div class="content">
+										<a href="#">歌手周深|凡间精灵，温柔唱响治愈之声</a>
+									</div>
+								</div>
+								<div class="col-sm-3 col-xs-6 col_img">
+									<img src="img/xinlei.jpg">
+									<div class="tup_1">
+										<a href="#"><span class="glyphicon glyphicon-headphones">216万</span></a>
+										<a href="#"><span class="glyphicon glyphicon-expand"></span></a>
+									</div>
+									<div class="content">
+										<a href="#">心累了，偷偷丧一会吧</a>
+									</div>
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-sm-3 col-xs-6 col_img">
+									<img src="img/gewang.jpg">
+									<div class="tup_1">
+										<a href="#"><span class="glyphicon glyphicon-headphones">111万</span></a>
+										<a href="#"><span class="glyphicon glyphicon-expand"></span></a>
+									</div>
+									<div class="content">
+										<a href="#">歌手·当打之年现场及原曲合集</a>
+									</div>
+								</div>
+								<div class="col-sm-3 col-xs-6 col_img">
+									<img src="img/backside1.jpg">
+									<div class="tup_1">
+										<a href="#"><span class="glyphicon glyphicon-headphones">224万</span></a>
+										<a href="#"><span class="glyphicon glyphicon-expand"></span></a>
+									</div>
+									<div class="content">
+										<a href="#">不回你微信的人，就别等了</a>
+									</div>
+								</div>
+								<div class="col-sm-3 col-xs-6 col_img col_img_dis">
+									<img src="img/backside2.jpg">
+									<div class="tup_1">
+										<a href="#"><span class="glyphicon glyphicon-headphones">697万</span></a>
+										<a href="#"><span class="glyphicon glyphicon-expand"></span></a>
+									</div>
+									<div class="content">
+										<a href="#">原版《Beautiful》</a>
+									</div>
+								</div>
+								<div class="col-sm-3 col-xs-6 col_img col_img_dis">
+									<img src="img/backside.jpg">
+									<div class="tup_1">
+										<a href="#"><span class="glyphicon glyphicon-headphones">32万</span></a>
+										<a href="#"><span class="glyphicon glyphicon-expand"></span></a>
+									</div>
+									<div class="content">
+										<a href="#">没有人是不可替代的，包括你</a>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-4 col_r col_r_dis">
+							<!-- 右边图片 -->
+							<div class="singer">
+								<ul>
+									<li>入驻歌手</li>
+									<li><a href="#">查看全部></a></li>
+								</ul>
+							</div>
+							<div class="singer_1">
+								<img src="img/zhm.jpg">
+								<span>张惠妹aMEI 台湾歌手张惠妹</span>
+							</div>
+							<div class="singer_1">
+								<img src="img/fine.jpg">
+								<span>Fine乐团 独立音乐人</span>
+							</div>
+							<div class="singer_1">
+								<img src="img/zhaolei.jpg">
+								<span>音乐人赵雷 民谣歌手</span>
+							</div>
+							<div class="singer_1">
+								<img src="img/wxl.jpg">
+								<span>萬曉利 民谣歌手、中国...</span>
+							</div>
+							<div class="singer_1">
+								<img src="img/wangsanpu.jpg">
+								<span>王三溥 音乐人</span>
+							</div>
+						</div>
+					</div>
+					<!-- 新碟上架 -->
+					<div class="row">
+						<div class="col-md-8 col-xs-12 col_l">
+							<!-- 新碟上架 -->
+							<ul class="nav nav-pills">
+								<li role="presentation">
+									<a href="#">
+										<img src="img/yuanq.png" id="img_1">
+									</a></li>
+								<li role="presentation"><a href="#" id="rem_1">新碟上架</a></li>
+								<li role="presentation"><a href="#" class="hua_2">更多</a></li>
+								<li role="presentation" id="more_1">
+									<a href="#">
+										<img src="img/jianto.png">
+									</a>
+								</li>
+							</ul>
+							<!-- 左边图片 -->
+							<div class="rows">
+								<div class="col-md-3 col-xs-6 col_img">
+									<img src="img/yinx.jpg">
+									<div class="word">
+										<h5><a href="#">隐形人</a></h5>
+										<h6><a href="#">二珂</a></h6>
+									</div>
+								</div>
+								<div class="col-md-3 col-xs-6 col_img">
+									<img src="img/Iu.jpg">
+									<div class="word">
+										<h5><a href="#">에잇</a></h5>
+										<h6><a href="#">IU</a></h6>
+									</div>
+								</div>
+								<div class="col-md-3 col-xs-6 col_img">
+									<img src="img/lixinyi.jpg">
+									<div class="word">
+										<h5><a href="#">月牙湾</a></h5>
+										<h6><a href="#">李鑫一</a></h6>
+									</div>
+								</div>
+								<div class="col-md-3 col-xs-6 col_img">
+									<img src="img/zhous1.jpg">
+									<div class="word">
+										<h5><a href="#">暗示</a></h5>
+										<h6><a href="#">周深</a></h6>
+									</div>
+								</div>
+							</div>
+						</div>
+						<!-- 右边图片 -->
+						<div class="col-lg-4 col_r col_r_dis">
+							<div class="singer">
+								<ul>
+									<li>热门主播</li>
+								</ul>
+							</div>
+							<div class="singer_3">
+								<img src="img/chenli.jpg" class="img-circle">
+								<span class="span_1">陈立</span><br />
+								<span class="span_2">心理学家、美食家陈立教授</span>
+							</div>
+							<div class="singer_3">
+								<img src="img/yanqiu.jpg" class="img-circle">
+								<span class="span_1">DJ艳秋</span><br />
+								<span class="span_2">著名音乐主持人</span>
+							</div>
+							<div class="singer_3">
+								<img src="img/juyuan.jpg" class="img-circle">
+								<span class="span_1">国家大剧院古典音乐频道</span><br />
+								<span class="span_2">国家大剧院古典音乐官方</span>
+							</div>
+							<div class="singer_3">
+								<img src="img/xiexie.jpg" class="img-circle">
+								<span class="span_1">谢谢收听</span><br />
+								<span class="span_2">南京电台支持人王馨</span>
+							</div>
+							<div class="singer_3 sin_dis">
+								<img src="img/xiaosu.jpg" class="img-circle">
+								<span class="span_1">DJ晓苏</span><br />
+								<span class="span_2">独立DJ，CRI环球旅游广播...</span>
+							</div>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-lg-8 col_l">
+							<!-- 榜单 -->
+							<ul class="nav nav-pills col_bang">
+								<li role="presentation">
+									<a href="#">
+										<img src="img/yuanq.png" id="img_1">
+									</a></li>
+								<li role="presentation"><a href="#" id="rem_1">榜单</a></li>
+								<li role="presentation"><a href="#" class="hua_2">更多</a></li>
+								<li role="presentation" id="more_1">
+									<a href="#">
+										<img src="img/jianto.png">
+									</a>
+								</li>
+							</ul>
+							<div class="height_2">
+								<div class="rows">
+									<div class="col-sm-4 col-xs-12 col_yun">
+										<div class="biao">
+											<img src="img/biaos.jpg" class="img-rounded">
+											<div class="col_word">
+												<a href="">云音乐飙升榜</a><br />
+												<a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+													<span class="glyphicon glyphicon-expand" aria-hidden="true"></span>
+													<span class="sr-only">Previous</span>
+												</a>
+												<a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+													<span class="
+			glyphicon glyphicon-heart-empty" aria-hidden="true"></span>
+													<span class="sr-only">Next</span>
+												</a>
+											</div>
+										</div>
+										<div class="song">
+											<p class="col_word_1"><a href="#"><span><b>1</b></span>&nbsp;&nbsp;&nbsp;青丝</a></p>
+											<p class="col_word_1"><a href="#"><span><b>2</b></span>&nbsp;&nbsp;&nbsp;醉梦前尘</a></p>
+											<p class="col_word_1"><a href="#"><span><b>3</b></span>&nbsp;&nbsp;&nbsp;九万字</a></p>
+											<p class="col_word_1"><a href="#">4&nbsp;&nbsp;&nbsp;霜雪千年</a></p>
+											<p class="col_word_1"><a href="#">5&nbsp;&nbsp;&nbsp;红尘轻剑</a></p>
+											<p class="col_word_1"><a href="#">6&nbsp;&nbsp;&nbsp;何以歌</a></p>
+											<p class="col_word_1"><a href="#">7&nbsp;&nbsp;&nbsp;长生诀</a></p>
+											<p class="col_word_1"><a href="#">8&nbsp;&nbsp;&nbsp;我梦见你</a></p>
+											<p class="col_word_1"><a href="#">9&nbsp;&nbsp;&nbsp;雨爱</a></p>
+											<p class="col_word_1"><a href="#">10&nbsp;&nbsp;&nbsp;恶作剧</a></p>
+											</ol>
+											<a href="#" class="word_1">查看全部></a>
+										</div>
+									</div>
+									<div class="col-sm-4 col-xs-12 col_yun_1">
+										<div class="biao">
+											<img src="img/xingge.jpg" class="img-rounded">
+											<div class="col_word">
+												<a href="">云音乐新歌榜</a><br />
+												<a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+													<span class="glyphicon glyphicon-expand" aria-hidden="true"></span>
+													<span class="sr-only">Previous</span>
+												</a>
+												<a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+													<span class="
+											glyphicon glyphicon-heart-empty" aria-hidden="true"></span>
+													<span class="sr-only">Next</span>
+												</a>
+											</div>
+										</div>
+										<div class="song">
+											<p class="col_word_1"><a href="#"><span><b>1</b></span>&nbsp;&nbsp;&nbsp;丢了你</a></p>
+											<p class="col_word_1"><a href="#"><span><b>2</b></span>&nbsp;&nbsp;&nbsp;万有引力</a></p>
+											<p class="col_word_1"><a href="#"><span><b>3</b></span>&nbsp;&nbsp;&nbsp;九万字</a></p>
+											<p class="col_word_1"><a href="#">4&nbsp;&nbsp;&nbsp;佛衣归</a></p>
+											<p class="col_word_1"><a href="#">5&nbsp;&nbsp;&nbsp;红色高跟鞋</a></p>
+											<p class="col_word_1"><a href="#">6&nbsp;&nbsp;&nbsp;电子羊</a></p>
+											<p class="col_word_1"><a href="#">7&nbsp;&nbsp;&nbsp;十八</a></p>
+											<p class="col_word_1"><a href="#">8&nbsp;&nbsp;&nbsp;樱花旅馆</a></p>
+											<p class="col_word_1"><a href="#">9&nbsp;&nbsp;&nbsp;我多想和你一起生活</a></p>
+											<p class="col_word_1"><a href="#">10&nbsp;&nbsp;&nbsp;写给母亲的歌</a></p>
+											<a href="#" class="word_1">查看全部></a>
+										</div>
+									</div>
+									<div class="col-sm-4 col-xs-12 col_yun_2">
+										<div class="biao">
+											<img src="img/yunq.jpg" alt="..." class="img-rounded">
+											<div class="col_word">
+												<a href="">网易云原创歌曲榜</a><br />
+												<a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+													<span class="glyphicon glyphicon-expand" aria-hidden="true"></span>
+													<span class="sr-only">Previous</span>
+												</a>
+												<a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+													<span class="
+											glyphicon glyphicon-heart-empty" aria-hidden="true"></span>
+													<span class="sr-only">Next</span>
+												</a>
+											</div>
+										</div>
+										<div class="song">
+											<p class="col_word_1"><a href="#"><span><b>1</b></span>&nbsp;&nbsp;起风了</a></p>
+											<p class="col_word_1"><a href="#"><span><b>2</b></span>&nbsp;&nbsp;温泉</a></p>
+											<p class="col_word_1"><a href="#"><span><b>3</b></span>&nbsp;&nbsp;Can't Slow Down</a></p>
+											<p class="col_word_1"><a href="#">4&nbsp;&nbsp;&nbsp;勿忘我</a></p>
+											<p class="col_word_1"><a href="#">5&nbsp;&nbsp;&nbsp;夏天的颜色</a></p>
+											<p class="col_word_1"><a href="#">6&nbsp;&nbsp;&nbsp;繁星</a></p>
+											<p class="col_word_1"><a href="#">7&nbsp;&nbsp;&nbsp;心跳</a></p>
+											<p class="col_word_1"><a href="#">8&nbsp;&nbsp;&nbsp;旧梦一场</a></p>
+											<p class="col_word_1"><a href="#">9&nbsp;&nbsp;&nbsp;岁月神偷</a></p>
+											<p class="col_word_1"><a href="#">10&nbsp;&nbsp;&nbsp;南方姑娘</a></p>
+											<a href="#" class="word_1">查看全部></a>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-4 col_r col_r_dis">
+							<div id="height_1"></div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="navbar navbar-default_db">
+			<div class="container">
+				<div class="col-lg-6 col_wang1">
+					<div class="rows picture">
+						<div class="col-sm-3 col-xs-6">
+							<a href="#"><img src="img/yonhu.png"></a>
+							<div class="user">
+								<p>用户认证</p>
+							</div>
+						</div>
+						<div class="col-sm-3 col-xs-6">
+							<a href="#"><img src="img/yinyuer.png"></a>
+							<div class="user">
+								<p>独立音乐人</p>
+							</div>
+						</div>
+						<div class="col-sm-3 col-xs-6">
+							<a href="#"><img src="img/zangs.png"></a>
+							<div id="user">
+								<p>赞赏</p>
+							</div>
+						</div>
+						<div class="col-sm-3 col-xs-6">
+							<a href="#"><img src="img/ship.png"></a>
+							<div class="user">
+								<p>视频奖励</p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-6 col_wang">
+					<div class="rows">
+						<p class="fuwu">
+							<a href="#">服务条款</a>&nbsp;&nbsp;<span>|</span>
+							<a href="#">隐私政策</a>&nbsp;&nbsp;<span>|</span>
+							<a href="#">儿童隐私政策</a>&nbsp;&nbsp;<span>|</span>
+							<a href="#">版权投诉指引</a>&nbsp;&nbsp;<span>|</span>
+							<a href="#">意见反馈</a>&nbsp;&nbsp;<span>|</span>
+						</p>
+						<p class="fuwu_1">
+							<a href="#">网易云公司版权所有@1997-2020 &nbsp;
+								杭州乐读科技有限公司运营:浙网文[2018]3506-263号</a>
+						</p>
+						<p class="fuwu_1">
+							<a href="#">违法和不良信息举报电话:057-89853516 &nbsp;举报邮箱:ncm5990@163.com</a>
+						</p>
+						<p class="fuwu_1">
+							<a href="#">粤B2-20090191-18&nbsp;工业和信息化部备案管理系统网站</a>
+						</p>
+					</div>
+				</div>
+			</div>
+		</div>
+		<script src="js/jquery-3.4.1.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/bootstrap.min.js" type="text/javascript" charset="utf-8"></script>
+	</body>
+</html>
